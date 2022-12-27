@@ -12,6 +12,8 @@ count = 0
 
 
 while count < 9:
+
+            
     if turn % 2 == 1:
         i = random.randint(0,2)
         j = random.randint(0,2)
