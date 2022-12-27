@@ -12,10 +12,6 @@ count = 0
 
 
 while count < 9:
-    print(turn, "turn")
-    print(count, "count")
-    print(gameover, "gameover")
-            
     if turn % 2 == 1:
         i = random.randint(0,2)
         j = random.randint(0,2)
