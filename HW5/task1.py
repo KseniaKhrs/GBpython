@@ -12,6 +12,8 @@ count = 0
 
 
 while count < 9:
+
+            
     if turn % 2 == 1:
         i = random.randint(0,2)
         j = random.randint(0,2)
@@ -39,25 +41,25 @@ while count < 9:
 
         else:
             print("Указанное поле уже занято")
-    if count in [5,7,9]:
-        if (field[0][0] == field[1][1] == field[2][2] != "X" or
-            field[0][2] == field[1][1] == field[2][0] != "X" or
-            field[0][0] == field[1][0] == field[2][0] != "X" or
-            field[0][1] == field[1][1] == field[2][1] != "X" or
-            field[0][2] == field[1][2] == field[2][2] != "X" or
-            field[0][0] == field[0][1] == field[0][2] != "X" or
-            field[1][0] == field[1][1] == field[1][2] != "X" or
-            field[2][0] == field[2][1] == field[2][2] != "X"):
+    if count > 4:
+        if (field[0][0] == field[1][1] == field[2][2] == "X" or
+            field[0][2] == field[1][1] == field[2][0] == "X" or
+            field[0][0] == field[1][0] == field[2][0] == "X" or
+            field[0][1] == field[1][1] == field[2][1] == "X" or
+            field[0][2] == field[1][2] == field[2][2] == "X" or
+            field[0][0] == field[0][1] == field[0][2] == "X" or
+            field[1][0] == field[1][1] == field[1][2] == "X" or
+            field[2][0] == field[2][1] == field[2][2] == "X") and gameover == 0:
             gameover = 1
             break
-        elif (field[0][0] == field[1][1] == field[2][2] != "O" or
-            field[0][2] == field[1][1] == field[2][0] != "O" or
-            field[0][0] == field[1][0] == field[2][0] != "O" or
-            field[0][1] == field[1][1] == field[2][1] != "O" or
-            field[0][2] == field[1][2] == field[2][2] != "O" or
-            field[0][0] == field[0][1] == field[0][2] != "O" or
-            field[1][0] == field[1][1] == field[1][2] != "O" or
-            field[2][0] == field[2][1] == field[2][2] != "O"):
+        elif (field[0][0] == field[1][1] == field[2][2] == "O" or
+            field[0][2] == field[1][1] == field[2][0] == "O" or
+            field[0][0] == field[1][0] == field[2][0] == "O" or
+            field[0][1] == field[1][1] == field[2][1] == "O" or
+            field[0][2] == field[1][2] == field[2][2] == "O" or
+            field[0][0] == field[0][1] == field[0][2] == "O" or
+            field[1][0] == field[1][1] == field[1][2] == "O" or
+            field[2][0] == field[2][1] == field[2][2] == "O") and gameover == 0:
             gameover = 2
             break
 
