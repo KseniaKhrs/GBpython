@@ -6,9 +6,3 @@ def read_phone_book():
 def add_new_contact(name, number):
     with open('book.txt', 'a', encoding='utf-8') as b:
             b.write(f'; {name}: {number}')
-
-
-# with open('book.txt', 'a', encoding='utf-8') as ph_book:
-#     for i in dict:
-#         ph_book.write(f'\n {i}, {dict[i]}')
-
